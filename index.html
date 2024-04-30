@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>¿Así o no te sirve jajaja?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff6f61;
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #respuesta {
+            font-size: 24px;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff483b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Una cosita rápida pa que no te olvides de mi hoy</h1>
+    </header>
+    <div class="container">
+        <p>¡Hola nena linda!</p>
+        <p>Te juro que no pensé en que llegara nadie como vos,
+            Que me aceptara y me amara tal y como soy,
+            Sos re buena chica Danita de mi corazón,
+            Me dejas pensando en vos cada vez que te saludo con un adiós,
+            Y yo no puedo creer que Dios me haya dado tener chance con vos,
+            Y mira que soy ateo, pero por vos CREO, creo en todo lo que se me ponga en frente
+            Tu mirada sin precedente, que me deja hasta con el corazón ardiente,
+            Sos hermosa por donde se te presente, me dejas sin palabras con esa belleza y no tengo inconveniente.
+            
+            Ya te dejo de joder con tanto poemita, porque me tengo que ir a trabajar
+
+        </p>
+        <p>Entonces, Te amo princesa linda</p>
+        <button id="btnRespuesta" onclick="responder('Pero no creo que me ames lo que yo te amo, porque vos me volves loco, sos hermosa, me tenés como queres.')">Yo también te amo bombón</button>
+        <button id="btnRespuesta" onclick="responder('Nunca, imposible que me ames más que yo a vos, no sé si tas entendiendo la magnitud con la que te amo, que a veces dejo el juego a un lado y me pongo a responderte, en conclusión, yo te amo más obviamente.')">Yo te amo más</button>
+        <button id="btnRespuesta" onclick="responder('No seas mala, ya toy re enamorado de vos, no podes responderme esto JAJAJAJ.')">No te amo y solo te quiero romper el cora</button>
+        <p id="respuesta"></p>
+    </div>
+    <script>
+        function responder(respuesta) {
+            document.getElementById("respuesta").innerHTML = respuesta;
+        }
+    </script>
+    
+</body>
+</html>
